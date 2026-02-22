@@ -1,168 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amit Kumar | Android Developer</title>
-    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/firsttest-54323.appspot.com/o/my_date%2FNewPortfolio_6_dec_2025%2Fstyle_new.css?alt=media&token=c088371f-b8ef-4cf3-95e2-da112f5c44d6" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
+  <meta charset="UTF-8">
+  <title>Amit Kumar | Senior Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
+  <style>
+    body {
+      margin:0;
+      padding:0;
+      background:linear-gradient(135deg,#EEF2F7,#F8FAFC);
+      font-family:'Inter', Arial, sans-serif;
+      color:#1F2937;
+    }
+
+    a {
+      text-decoration:none;
+      color:#2563EB;
+      font-weight:600;
+    }
+
+    h1,h2,h3 { margin:0; }
+
+    .container {
+      max-width:1000px;
+      margin:60px auto;
+      background:#fff;
+      border-radius:20px;
+      box-shadow:0 30px 70px rgba(0,0,0,0.08);
+      overflow:hidden;
+    }
+
+    .header {
+      background:linear-gradient(135deg,#1F3A5F,#2563EB);
+      padding:70px 40px;
+      text-align:center;
+      color:#fff;
+    }
+
+    .header img {
+      border-radius:50%;
+      margin-bottom:20px;
+      border:5px solid rgba(255,255,255,0.3);
+    }
+
+    .header h1 {
+      font-size:40px;
+      font-weight:800;
+      letter-spacing:2px;
+    }
+
+    .header p {
+      margin-top:15px;
+      font-size:17px;
+      opacity:0.95;
+    }
+
+    .btn {
+      display:inline-block;
+      margin-top:25px;
+      padding:12px 22px;
+      background:#fff;
+      color:#1F3A5F;
+      border-radius:30px;
+      font-size:14px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover {
+      background:#1F3A5F;
+      color:#fff;
+    }
+
+    .section {
+      padding:60px 70px;
+    }
+
+    .section h2 {
+      font-size:26px;
+      font-weight:700;
+      margin-bottom:25px;
+      position:relative;
+    }
+
+    .section h2::after {
+      content:'';
+      width:60px;
+      height:4px;
+      background:#2563EB;
+      position:absolute;
+      bottom:-10px;
+      left:0;
+      border-radius:4px;
+    }
+
+    .summary {
+      font-size:16px;
+      line-height:1.8;
+      color:#4B5563;
+    }
+
+    .skills span {
+      display:inline-block;
+      margin:7px 10px;
+      background:#EEF2FF;
+      color:#1E3A8A;
+      padding:9px 15px;
+      border-radius:25px;
+      font-size:13px;
+      transition:all 0.25s ease;
+    }
+
+    .skills span:hover {
+      background:#2563EB;
+      color:#fff;
+      transform:translateY(-3px);
+      box-shadow:0 10px 20px rgba(37,99,235,0.25);
+    }
+
+    .divider {
+      height:1px;
+      background:#E5E7EB;
+      border:none;
+      margin:0 70px;
+    }
+
+    .experience-item {
+      margin-bottom:35px;
+    }
+
+    .experience-item h3 {
+      font-size:20px;
+      margin-bottom:5px;
+    }
+
+    .experience-item span {
+      font-size:14px;
+      color:#6B7280;
+    }
+
+    .experience-item ul {
+      margin-top:12px;
+      padding-left:20px;
+      color:#4B5563;
+      line-height:1.7;
+      font-size:15px;
+    }
+
+    .project-card {
+      border-radius:16px;
+      padding:35px;
+      margin-bottom:35px;
+      background:#F9FAFB;
+      transition:all 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform:translateY(-6px);
+      box-shadow:0 25px 45px rgba(37,99,235,0.15);
+      background:#fff;
+    }
+
+    .project-card h3 {
+      font-size:22px;
+      margin-bottom:14px;
+      color:#111827;
+    }
+
+    .project-card p {
+      color:#4B5563;
+      font-size:15px;
+      line-height:1.7;
+      margin-bottom:14px;
+    }
+
+    .footer {
+      background:#F3F4F6;
+      padding:45px;
+      text-align:center;
+      font-size:14px;
+      color:#6B7280;
+    }
+
+    .footer a {
+      margin:0 10px;
+    }
+
+    @media(max-width:900px){
+      .section { padding:40px 30px; }
+      .divider { margin:0 30px; }
+      .container { margin:30px 15px; }
+    }
+
+  </style>
+</head>
 <body>
 
-    <!-- ===== NAVBAR ===== -->
-    <header>
-        <nav class="container">
-            <h2 class="logo">Amit<span>Kumar</span></h2>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-    
-        </nav>
-    </header>
+<div class="container">
 
-    <!-- ===== HERO SECTION ===== -->
-    
-<!--
-    <section class="hero">
-        <div class="container hero-content">
-            <h1>Hello, I'm <span>Amit Kumar</span></h1>
-            <p class="subtitle">Sr. Android Developer | Java | Kotlin | Firebase</p>
-            <a href="#projects" class="btn-primary">View Projects</a>
-        </div>
-    </section>
--->
-    
-    <section class="hero">
-    <div class="container hero-wrapper">
-<div class="hero-img">
-            <img src="https://firebasestorage.googleapis.com/v0/b/firsttest-54323.appspot.com/o/my_date%2Famit_kumar.png?alt=media&token=dd96dcf6-623a-4c63-b431-e2cd8789c4b0" alt="Amit's Photo">
-        </div>
-        <div class="hero-text">
-            <h1>Hello, I'm <span>Amit Kumar</span></h1>
-            <p class="subtitle">Sr. Android Developer | Java | Kotlin | Firebase</p>
-            <a href="#projects" class="btn-primary">View Projects</a>
-            <a href="https://firebasestorage.googleapis.com/v0/b/firsttest-54323.appspot.com/o/my_date%2FResume_AmitKumar.pdf?alt=media&token=63a89840-d548-4d97-ab3f-38fb068f458b" class="btn-primary"target="_blank">Download Resume</a>
-        </div>
+  <div class="header">
+    <img src="https://firebasestorage.googleapis.com/v0/b/firsttest-54323.appspot.com/o/my_date%2Famit_kumar.png?alt=media" width="160" alt="Amit Kumar">
+    <h1>AMIT KUMAR</h1>
+    <p>Senior Software Engineer • Android Architect • AI-Integrated Systems</p>
+    <a href="resume.pdf" class="btn">Download Resume</a>
+  </div>
 
-        
+  <div class="section">
+    <h2>Professional Summary</h2>
+    <p class="summary">
+      Senior Software Engineer with 7+ years of experience designing and delivering scalable Android applications and backend-integrated systems. 
+      Strong expertise in clean architecture, MVVM, REST API integration, performance optimization, and Generative AI API integration. 
+      Experienced in full product lifecycle from concept to production deployment on Google Play.
+    </p>
+  </div>
 
+  <hr class="divider">
+
+  <div class="section">
+    <h2>Professional Experience</h2>
+
+    <div class="experience-item">
+      <h3>Senior Android Developer</h3>
+      <span>7+ Years Experience</span>
+      <ul>
+        <li>Designed and developed scalable Android applications using MVVM architecture.</li>
+        <li>Integrated REST APIs and optimized network handling for performance and stability.</li>
+        <li>Implemented secure payment SDK integrations and real-time data handling.</li>
+        <li>Integrated Generative AI APIs to enable intelligent and personalized app features.</li>
+        <li>Managed Play Store deployments, versioning, testing tracks, and production releases.</li>
+      </ul>
     </div>
-</section>
 
+  </div>
 
-    <!-- ===== ABOUT SECTION ===== -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-desc">
-                Passionate Android Developer with hands-on experience in building modern Android applications using Java, Kotlin, Android Studio, 
-                Firebase, and clean architecture principles. I love creating high-quality, user-friendly mobile applications.
-                <p style="margin: 0; margin-bottom: 16px;">. <b>Android Developer | 7 years experience</b> building modern, high-performance mobile apps.</p>
-                <p style="margin: 0; margin-bottom: 16px;">. Expert in <b>Java, Kotlin, Android Studio, MVVM architecture, Firebase, REST APIs.</b></p>
-				<p style="margin: 0; margin-bottom: 16px;">. Proven track record of <b>launching apps on Google Play Store</b> with excellent stability and UX</p>
-				<p style="margin: 0; margin-bottom: 16px;">. Skilled in <b>end-to-end project delivery:</b> design, development, testing, deployment.</p>
-                <p style="margin: 0; margin-bottom: 16px;">. Experienced in <b>managing multiple projects</b> while maintaining coding standards and timelines.</p>
-				<p style="margin: 0; margin-bottom: 16px;">. Strong <b>problem-solving, analytical thinking, and quick learning skills.</b></p>
-                <p style="margin: 0; margin-bottom: 16px;">. Effective <b>team collaborator</b> with excellent communication and independent work capabilities.</p>
-                <p style="margin: 0; ">. Committed to <b>clean code, scalable architecture, and creating impactful user experiences.</b></p>
-            </p>
-        </div>
-    </section>
+  <hr class="divider">
 
-    <!-- ===== SKILLS SECTION ===== -->
-    <section id="skills" class="section grey">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <span>Java</span>
-                <span>Kotlin</span>
-                <span>Android Studio</span>
-                <span>Android SDK</span>
-                <span>XML UI</span>
-                <span>Compose</span>
-                <span>Firebase</span>
-                <span>Git & GitHub</span>
-                <span>REST APIs</span>
-                <span>GSON</span>
-                <span>Jetpack Components</span>
-                <span>MVVM Architecture</span>
-                <span>MVP Architecture</span>
-                <span>MVC Architecture</span>
-                <span>Crashlytics</span>
-                <span>RoomDB</span>
-                <span>SqLite</span>
-                <span>Jira</span>
-                <span>Retrofit</span>
-                <span>Volley</span>
-                <span>Postman</span>
-                <span>Spring</span>
-                <span>Spring Boot</span>
-                <span>Microservices</span>
-                
-            </div>
-        </div>
-    </section>
+  <div class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <span>Java</span><span>Kotlin</span><span>Python</span><span>C</span><span>C++</span>
+      <span>Android SDK</span><span>MVVM</span><span>MVP</span><span>MVC</span>
+      <span>Jetpack Compose</span><span>XML</span>
+      <span>REST API</span><span>Retrofit</span><span>Volley</span>
+      <span>Firebase</span><span>Crashlytics</span>
+      <span>SQLite</span><span>RoomDB</span>
+      <span>Payment SDK Integration</span>
+      <span>MySQL</span><span>Spring Boot</span><span>Microservices</span>
+      <span>Maven</span><span>Gradle</span>
+      <span>Git</span><span>GitHub</span><span>Bitbucket</span>
+      <span>SVN</span><span>Jira</span><span>Zoho</span>
+      <span>Trello</span><span>Postman</span>
+      <span>Android Studio</span><span>IntelliJ IDEA</span>
+      <span>Eclipse</span><span>NetBeans</span>
+    </div>
+  </div>
 
-    <!-- ===== PROJECTS SECTION ===== -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
+  <hr class="divider">
 
-            <div class="project-card">
-                <h3>📱 UBLAMP</h3>
-                <p>UbLamp is an application in which a student can check their academic growth as per their standard. And also a student can give different type of tests like Maths, Fluency test essay writing test etc. And also can attempt MCQs test that will be evaluated later by the teacher and give marks accordingly.</p>
-                <a class="project-link" href="https://www.readingtown.com/release-of-ublamp-the-ultimate-learning-and-management-platform/" target="_blank">View Project →</a>
-            </div>
+  <div class="section">
+    <h2>AI & Generative AI Expertise</h2>
+    <div class="skills">
+      <span>Prompt Engineering</span>
+      <span>OpenAI / ChatGPT API Integration</span>
+      <span>Google Gemini API Integration</span>
+      <span>Grok AI Integration</span>
+      <span>AI-powered Android Features</span>
+      <span>Workflow Automation using AI</span>
+      <span>Personalization Systems</span>
+    </div>
+  </div>
 
-            <div class="project-card">
-                <h3>📱 Hand Over</h3>
-                <p>Hand Over is its own product that offer to deliver groceries and food items to their customers. It is an Android application that has two parts. First is for the rider who deliver the item to the customers and the second one is for the customer who is going to get delivery from the rider. this application is the competitor for other apps like zomato or swiggy etc.</p>
-                <a class="project-link" href="https://play.google.com/store/apps/details?id=com.handover.customerapp" target="_blank">View Project →</a>
-            </div>
-            <div class="project-card">
-                <h3>📱 VIRTUAL DIAMOND PRODUCT(VDB)</h3>
-                <p>Virtual Diamond Boutique is the jewelry industry’s premier platform to buy and sell diamonds, color gemstones, lab-grown diamonds and fine jewelry. With over 25000 members worldwide, VDB was designed to work on any device, anywhere to connect jewelry industry buyers and sellers for more efficient, more effective, sourcing and selling.</p>
-                <a class="project-link" href="https://play.google.com/store/apps/details?id=com.vdbapp.android" target="_blank">View Project →</a>
-            </div>
-            <div class="project-card">
-                <h3>📱 Sova Security</h3>
-                <p>The preferred electronic guard tour system and security management platform built for the hospitality industry and now available for other industries.<br/>
-                <b>Benefits:</b>
-                <p style="margin: 0; margin-bottom: 16px;">* System includes live dispatch, electronic guard tour, lost and found, task management, visitor badge, package management, equipment checkout, persons of interest and more.</p>
-                <p style="margin: 0; margin-bottom: 16px;">* Full admin interface on the PC and also on the mobile device.</p>
-                <p style="margin: 0; margin-bottom: 16px;">* Works with NFC tags or Bluetooth beacons which serve as waypoints or checkpoints on a property guard tour.</p>
-                <p style="margin: 0; margin-bottom: 16px;">* Track users on a map in near real-time.</p>
-                <p style="margin: 0; margin-bottom: 16px;">* View live feeds showing detailed activity on all of your users.</p>
-                <p style="margin: 0; margin-bottom: 16px;">* View historical data on a map, showing all user activity during a particular time.</p>
-                <p style="margin: 0; margin-bottom: 16px;">* Drill down to a single checkpoint or waypoint, and see when that checkpoint was scanned, and by whom, during a selected time frame.</p>
-                <a class="project-link" href="https://play.google.com/store/apps/details?id=com.sova.guardtour" target="_blank">View Project →</a>
-            </div>
-            
-        </div>
-    </section>
+  <hr class="divider">
 
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact" class="section grey">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <p class="section-desc">Feel free to reach out for collaboration or opportunities!</p>
-            <div class="contact-links">
-                <a href="mailto:amitsaxena383828@gmail.com">Email</a>
-                <a href="https://github.com/amitsaxena383828" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/amitsaxena-" target="_blank">LinkedIn</a>
-                <a href="https://api.whatsapp.com/send?phone=918860486582" target="_blank">Watsapp</a>
-            </div>
-        </div>
-    </section>
+  <div class="section">
+    <h2>Projects</h2>
 
-    <footer>
-        <p>© 2025 Amit Kumar. All Rights Reserved.</p>
-    </footer>
-<script>
+    <div class="project-card">
+      <h3>UBLAMP — AI-powered EdTech Platform</h3>
+      <p>
+        UbLamp is an application in which a student can check their academic growth as per their standard. And also a student can give different type of tests like Maths, Fluency test essay writing test etc. And also can attempt MCQs test that will be evaluated later by the teacher and give marks accordingly.
+      </p>
+      <a href="https://www.readingtown.com/release-of-ublamp-the-ultimate-learning-and-management-platform/" target="_blank">View Project →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>HandOver — Food & Grocery Delivery App</h3>
+      <p>
+        Hand Over is its own product that offer to deliver groceries and food items to their customers. It is an Android application that has two parts. First is for the rider who deliver the item to the customers and the second one is for the customer who is going to get delivery from the rider. this application is the competitor for other apps like zomato or swiggy etc.
+      </p>
+      <a href="https://play.google.com/store/apps/details?id=com.handover.customerapp&pli=1" target="_blank">View on Google Play →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>VIRTUAL DIAMOND PRODUCT(VDB)</h3>
+      <p>
+        Virtual Diamond Boutique is the jewelry industry’s premier platform to buy and sell diamonds, color gemstones, lab-grown diamonds and fine jewelry. With over 25000 members worldwide, VDB was designed to work on any device, anywhere to connect jewelry industry buyers and sellers for more efficient, more effective, sourcing and selling.
+      </p>
+      <a href="https://play.google.com/store/apps/details?id=com.vdbapp.android" target="_blank">View on Google Play →</a>
+    </div>
+      
+    <div class="project-card">
+      <h3>Sova Security</h3>
+      <p>
+        The preferred electronic guard tour system and security management platform built for the hospitality industry and now available for other industries.<br/>
+        System includes live dispatch, electronic guard tour, lost and found, task management, visitor badge, package management, equipment checkout, persons of interest and more.
+        Full admin interface on the PC and also on the mobile device.
+        Works with NFC tags or Bluetooth beacons which serve as waypoints or checkpoints on a property guard tour.
+        Track users on a map in near real-time.
+      </p>
+      <a href="https://play.google.com/store/apps/details?id=com.sova.guardtour" target="_blank">View on Google Play →</a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Amit Kumar • Senior Software Engineer <br><br>
+      Feel free to reach out for collaboration or opportunities!<br><br>
+    <a href="https://linkedin.com/in/amitsaxena-" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/amitsaxena383828" target="_blank">GitHub</a> |
+    <a href="mailto:amitsaxena3838@gmail.com">Email</a>
+  </div>
+
+</div>
 
 </body>
 </html>
